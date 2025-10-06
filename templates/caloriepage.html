@@ -1,0 +1,41 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calorie Calculation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/main.css" />
+  </head>
+  <body>
+    <h1>Calories Calculation Form</h1>
+    <h3>Fill in the form and click button to know many calories you need:</h3>
+
+    <form action="/results" method="post">
+      {{user_info.weight.label}}{{user_info.weight}}
+      <br />
+      {{user_info.height.label}}{{user_info.height}}
+      <br />
+      {{user_info.age.label}}{{user_info.age}}
+      <br />
+      <br />
+      {{user_info.gender.label}}: {{user_info.gender}}
+      <br />
+      <br />
+      {{user_info.activity_level.label}}{{user_info.activity_level}}
+      <br />
+      {{user_info.country.label}}{{user_info.country}}
+      <br />
+      {{user_info.city.label}}{{user_info.city}}
+      <br />
+      {{user_info.submit_button}}
+    </form>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calorie Calculation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/main.css" />
+  </head>
+  <body>
+    <h1>Results</h1>
+    <h3>Using the following input data:</h3>
+    Weight: {{weight}}
+    <br />
+    Height: {{height}}
+    <br />
+    Age: {{age}}
+    <br />
+    Gender: {{gender}}
+    <br />
+    City: {{city}}
+    <br />
+    Country: {{country}}
+    <br />
+    Current temp: {{temperture}}
+    <br />
+    <h3>You would need the following calories:</h3>
+    {{calories}} kcal per day to maintain weight
+    <br>
+    <br>
+    <a href={{url_for('calorie_page')}}>Enter new info </a>
+  </body>
+</html>
